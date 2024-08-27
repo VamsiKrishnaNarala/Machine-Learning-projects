@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Input Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            text-align: center;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .container1 {
+            text-align: center;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        input[type="text"] {
+            width: 300px;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+<form action="WebScrapping" method="POST" enctype="multipart/form-data">
+<div class="container">
+   
+    <h1>Enter YouTube URL</h1>
+    <input type="text" name="url" id="url" placeholder="Enter URL here">
+    <br>
+    <button onclick="processURL()">Submit </button>
+
+    <h3>Title of the video is </h3>
+    <textarea id="text1" name="text1" class="form-control" rows="3" cols="50">{{ Title}}</textarea>
+    <br>
+
+    <h3>Description of the video is </h3>
+    <textarea id="text2" name="text2" class="form-control" rows="10" cols="50">{{ Description}}</textarea>
+    <br>
+
+    <h3>No of Views </h3>
+    <textarea id="text3" name="text3" class="form-control" rows="3" cols="50">{{ Views}}</textarea>
+    <br>
+</div>
+
+</body>
+</html>
